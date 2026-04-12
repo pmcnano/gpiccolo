@@ -1,6 +1,6 @@
 export type Lang = 'en' | 'es'
 
-export const careerStart = new Date('2019-03-01')
+export const careerStart = new Date('2018-03-01')
 
 export function yearsOfExperience(): number {
   return Math.floor((Date.now() - careerStart.getTime()) / (365.25 * 24 * 60 * 60 * 1000))
