@@ -1,0 +1,67 @@
+---
+import type { Lang } from '../data/resume'
+import { content } from '../data/resume'
+
+interface Props { lang: Lang }
+const { lang } = Astro.props
+const t = content[lang]
+---
+
+<section id="experience">
+  <div class="container">
+    <p class="section-label">{t.sections.experience}</p>
+    <div class="jobs">
+      {t.experience.map((job) => (
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3 class="job-company">{job.company}</h3>
+              <p class="job-role mono">
+                {job.role}
+                {job.type && <span class="job-type muted"> · {job.type}</span>}
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="mono muted">{job.period}</span>
+              {job.location && <span class="muted">{job.location}</span>}
+            </div>
+          </div>
+          {job.bullets.length > 0 && (
+            <ul class="job-bullets">
+              {job.bullets.map((b) => <li>{b}</li>)}
+            </ul>
+          )}
+          {job.bullets.length === 0 && (
+            <p class="muted" style="font-size: 0.875rem; margin-top: 0.5rem;">Details coming soon.</p>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .jobs { display: flex; flex-direction: column; gap: 2.5rem; }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .job-company { font-size: 1.05rem; font-weight: 600; }
+  .job-role { font-size: 0.875rem; color: var(--accent); margin-top: 0.15rem; }
+  .job-type { color: var(--text-muted); }
+  .job-meta { text-align: right; font-size: 0.8rem; display: flex; flex-direction: column; gap: 0.15rem; }
+  .job-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; padding-left: 0; }
+  .job-bullets li { font-size: 0.9rem; color: var(--text-muted); padding-left: 1.25rem; position: relative; }
+  .job-bullets li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.75rem;
+    top: 0.15rem;
+  }
+</style>
