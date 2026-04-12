@@ -32,7 +32,7 @@ const t = content[lang]
             </ul>
           )}
           {job.bullets.length === 0 && (
-            <p class="muted" style="font-size: 0.875rem; margin-top: 0.5rem;">Details coming soon.</p>
+            <p class="job-pending muted">Details coming soon.</p>
           )}
         </div>
       ))}
@@ -56,6 +56,7 @@ const t = content[lang]
   .job-meta { text-align: right; font-size: 0.8rem; display: flex; flex-direction: column; gap: 0.15rem; }
   .job-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; padding-left: 0; }
   .job-bullets li { font-size: 0.9rem; color: var(--text-muted); padding-left: 1.25rem; position: relative; }
+  .job-pending { font-size: 0.875rem; margin-top: 0.5rem; }
   .job-bullets li::before {
     content: '▸';
     position: absolute;
