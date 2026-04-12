@@ -23,10 +23,22 @@ export const content = {
     },
     sections: {
       experience: 'Experience',
+      projects: 'Projects',
       skills: 'Skills',
       education: 'Education',
       contact: 'Contact',
     },
+    projects: [
+      {
+        name: 'VUCEM PDF',
+        description: 'PDF and image converter to 300 DPI for SAT (Mexican tax authority) compliance. Built and shipped as a free tier and a paid Pro tier with user accounts, higher limits, and background processing.',
+        stack: ['Ruby', 'Sinatra', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Python', 'Dokku'],
+        links: [
+          { label: 'Free tier', href: 'https://www.vucempdf.com' },
+          { label: 'Pro tier', href: 'https://pro.vucempdf.com' },
+        ],
+      },
+    ],
     experience: [
       {
         company: 'Goldbelly',
@@ -105,10 +117,22 @@ export const content = {
     },
     sections: {
       experience: 'Experiencia',
+      projects: 'Proyectos',
       skills: 'Habilidades',
       education: 'Educación',
       contact: 'Contacto',
     },
+    projects: [
+      {
+        name: 'VUCEM PDF',
+        description: 'Convertidor de PDFs e imágenes a 300 DPI para cumplimiento con el SAT. Desarrollado y lanzado en dos niveles: una versión gratuita y una Pro de pago con cuentas de usuario, límites superiores y procesamiento en segundo plano.',
+        stack: ['Ruby', 'Sinatra', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Python', 'Dokku'],
+        links: [
+          { label: 'Versión gratuita', href: 'https://www.vucempdf.com' },
+          { label: 'Versión Pro', href: 'https://pro.vucempdf.com' },
+        ],
+      },
+    ],
     experience: [
       {
         company: 'Goldbelly',

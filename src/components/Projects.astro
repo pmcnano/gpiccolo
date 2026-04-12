@@ -1,0 +1,69 @@
+---
+import type { Lang } from '../data/resume'
+import { content } from '../data/resume'
+
+interface Props { lang: Lang }
+const { lang } = Astro.props
+const t = content[lang]
+---
+
+<section id="projects">
+  <div class="container">
+    <p class="section-label">{t.sections.projects}</p>
+    <div class="projects-list">
+      {t.projects.map((project) => (
+        <div class="project">
+          <div class="project-header">
+            <h3 class="project-name">{project.name}</h3>
+            <div class="project-links">
+              {project.links.map((link) => (
+                <a href={link.href} target="_blank" rel="noopener noreferrer" class="project-link mono">
+                  {link.label} ↗
+                </a>
+              ))}
+            </div>
+          </div>
+          <p class="project-description">{project.description}</p>
+          <div class="badges">
+            {project.stack.map((tech) => <span class="badge mono">{tech}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects-list { display: flex; flex-direction: column; gap: 2rem; }
+  .project-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.65rem;
+    flex-wrap: wrap;
+  }
+  .project-name { font-size: 1.05rem; font-weight: 600; }
+  .project-links { display: flex; gap: 1rem; }
+  .project-link {
+    font-size: 0.8rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+  .project-link:hover { text-decoration: none; opacity: 0.75; }
+  .project-description {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    max-width: 620px;
+  }
+  .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    border: 1px solid var(--border);
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+</style>
