@@ -1,0 +1,38 @@
+---
+import type { Lang } from '../data/resume'
+import { content } from '../data/resume'
+
+interface Props { lang: Lang }
+const { lang } = Astro.props
+const t = content[lang]
+---
+
+<section id="skills">
+  <div class="container">
+    <p class="section-label">{t.sections.skills}</p>
+    <div class="skill-groups">
+      {Object.entries(t.skills).map(([group, items]) => (
+        <div class="skill-group">
+          <p class="group-name muted mono">{group}</p>
+          <div class="badges">
+            {items.map((skill) => <span class="badge mono">{skill}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .skill-groups { display: flex; flex-direction: column; gap: 1.5rem; }
+  .group-name { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+  .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.65rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+</style>
