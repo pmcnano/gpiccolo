@@ -1,5 +1,11 @@
 export type Lang = 'en' | 'es'
 
+export const careerStart = new Date('2019-03-01')
+
+export function yearsOfExperience(): number {
+  return Math.floor((Date.now() - careerStart.getTime()) / (365.25 * 24 * 60 * 60 * 1000))
+}
+
 export const links = {
   email: 'paul@gpiccolo.com',
   linkedin: 'https://www.linkedin.com/in/paul-gonzalez-piccolo-8711a113/',
@@ -12,7 +18,7 @@ export const content = {
     hero: {
       name: 'Paul Gonzalez',
       title: 'Senior Software Engineer',
-      summary: 'Ruby on Rails engineer with 7+ years of experience building scalable systems, integrations, and automation. Currently at Goldbelly.',
+      summary: (years: number) => `Ruby on Rails engineer with ${years}+ years of experience building scalable systems, integrations, and automation. Currently at Goldbelly.`,
       location: 'Mexico · Remote',
     },
     sections: {
@@ -25,7 +31,7 @@ export const content = {
       {
         company: 'Goldbelly',
         role: 'Senior Software Engineer',
-        type: 'Contract',
+        type: '',
         period: 'Aug 2025 – Present',
         location: 'Remote',
         bullets: [] as string[],
@@ -55,7 +61,8 @@ export const content = {
         location: '',
         bullets: [
           'Built backend system for inventory and order management — 30% YOY growth, 90% process automation',
-          'Engineered e-commerce integrations: Amazon, MercadoLibre, WooCommerce, Shopify, and Eneba',
+          'Engineered e-commerce integrations: Amazon, MercadoLibre, WooCommerce, Shopify, Eneba, Kinguin, G2A, and Driffle',
+          'Integrated Incomm Payments as a supplier, expanding product sourcing capabilities',
           'Developed smart order processing to detect and prevent fraud',
           'Orchestrated migration from Heroku to VPS using Dokku',
           'Set up open-source BI and CI/CD tooling',
@@ -86,7 +93,7 @@ export const content = {
     hero: {
       name: 'Paul Gonzalez',
       title: 'Ingeniero de Software Senior',
-      summary: 'Ingeniero Ruby on Rails con más de 7 años de experiencia construyendo sistemas escalables, integraciones y automatización. Actualmente en Goldbelly.',
+      summary: (years: number) => `Ingeniero Ruby on Rails con más de ${years} años de experiencia construyendo sistemas escalables, integraciones y automatización. Actualmente en Goldbelly.`,
       location: 'México · Remoto',
     },
     sections: {
@@ -99,7 +106,7 @@ export const content = {
       {
         company: 'Goldbelly',
         role: 'Ingeniero de Software Senior',
-        type: 'Contrato',
+        type: '',
         period: 'Ago 2025 – Presente',
         location: 'Remoto',
         bullets: [] as string[],
@@ -129,7 +136,8 @@ export const content = {
         location: '',
         bullets: [
           'Construí sistema backend para gestión de inventario y órdenes — 30% de crecimiento anual, 90% de automatización',
-          'Integré plataformas de e-commerce: Amazon, MercadoLibre, WooCommerce, Shopify y Eneba',
+          'Integré plataformas de e-commerce: Amazon, MercadoLibre, WooCommerce, Shopify, Eneba, Kinguin, G2A y Driffle',
+          'Integré Incomm Payments como proveedor, ampliando las capacidades de abastecimiento de productos',
           'Desarrollé procesamiento inteligente de órdenes para detectar y prevenir fraude',
           'Orquesté migración de Heroku a VPS con Dokku',
           'Configuré herramientas open-source de BI y CI/CD',

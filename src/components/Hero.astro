@@ -1,10 +1,11 @@
 ---
 import type { Lang } from '../data/resume'
-import { content, links } from '../data/resume'
+import { content, links, yearsOfExperience } from '../data/resume'
 
 interface Props { lang: Lang }
 const { lang } = Astro.props
 const { hero } = content[lang]
+const years = yearsOfExperience()
 ---
 
 <div class="hero container">
@@ -15,7 +16,7 @@ const { hero } = content[lang]
     <h1 class="hero-name">{hero.name}</h1>
     <p class="hero-title mono">{hero.title}</p>
     <p class="hero-location muted">{hero.location}</p>
-    <p class="hero-summary">{hero.summary}</p>
+    <p class="hero-summary">{hero.summary(years)}</p>
     <div class="hero-links">
       <a href={`mailto:${links.email}`} aria-label="Email">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
