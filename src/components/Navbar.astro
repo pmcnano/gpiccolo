@@ -1,0 +1,78 @@
+---
+import type { Lang } from '../data/resume'
+import { content } from '../data/resume'
+
+interface Props { lang: Lang }
+const { lang } = Astro.props
+const t = content[lang]
+const langHref = lang === 'en' ? '/es/' : '/'
+---
+
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <span class="nav-name mono">{t.nav.name}</span>
+    <div class="nav-controls">
+      <a href={langHref} class="lang-toggle mono">{t.langToggle}</a>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀</span>
+        <span class="icon-moon">◑</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('theme-toggle')!
+  const root = document.documentElement
+
+  function updateIcons() {
+    const isDark = root.getAttribute('data-theme') === 'dark'
+    const sun = document.querySelector<HTMLElement>('.icon-sun')!
+    const moon = document.querySelector<HTMLElement>('.icon-moon')!
+    sun.style.display = isDark ? 'none' : 'inline'
+    moon.style.display = isDark ? 'inline' : 'none'
+  }
+
+  btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
+    root.setAttribute('data-theme', next)
+    localStorage.setItem('theme', next)
+    updateIcons()
+  })
+
+  updateIcons()
+</script>
+
+<style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+  }
+  .navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-name { font-size: 0.9rem; color: var(--accent); }
+  .nav-controls { display: flex; align-items: center; gap: 1rem; }
+  .lang-toggle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+  }
+  .lang-toggle:hover { color: var(--accent); text-decoration: none; }
+  #theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1;
+  }
+  #theme-toggle:hover { color: var(--accent); }
+</style>
