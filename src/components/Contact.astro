@@ -1,0 +1,31 @@
+---
+import type { Lang } from '../data/resume'
+import { content, links } from '../data/resume'
+
+interface Props { lang: Lang }
+const { lang } = Astro.props
+const t = content[lang]
+---
+
+<section id="contact">
+  <div class="container contact-inner">
+    <p class="section-label">{t.sections.contact}</p>
+    <h2 class="contact-heading">{t.contact.heading}</h2>
+    <p class="contact-sub muted">{t.contact.subheading}</p>
+    <a href={`mailto:${links.email}`} class="contact-email mono">{links.email}</a>
+  </div>
+</section>
+
+<style>
+  .contact-inner { padding-bottom: 5rem; }
+  .contact-heading { font-size: 1.75rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .contact-sub { margin-bottom: 1.25rem; }
+  .contact-email {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 1rem;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+  }
+  .contact-email:hover { text-decoration: none; opacity: 0.8; }
+</style>
