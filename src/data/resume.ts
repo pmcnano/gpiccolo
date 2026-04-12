@@ -18,7 +18,7 @@ export const content = {
     hero: {
       name: 'Paul Gonzalez',
       title: 'Senior Software Engineer',
-      summary: (years: number) => `Ruby on Rails engineer with ${years}+ years of experience building scalable systems, integrations, and automation. Currently at Goldbelly.`,
+      summary: (years: number) => `Ruby on Rails engineer with ${years}+ years of experience building scalable systems, integrations, and automation. Known for a sharp eye on performance and a strong attention to detail. Currently at Goldbelly.`,
       location: 'Mexico · Remote',
     },
     sections: {
@@ -93,7 +93,7 @@ export const content = {
     hero: {
       name: 'Paul Gonzalez',
       title: 'Ingeniero de Software Senior',
-      summary: (years: number) => `Ingeniero Ruby on Rails con más de ${years} años de experiencia construyendo sistemas escalables, integraciones y automatización. Actualmente en Goldbelly.`,
+      summary: (years: number) => `Ingeniero Ruby on Rails con más de ${years} años de experiencia construyendo sistemas escalables, integraciones y automatización. Reconocido por su atención al rendimiento y su gran atención al detalle. Actualmente en Goldbelly.`,
       location: 'México · Remoto',
     },
     sections: {
