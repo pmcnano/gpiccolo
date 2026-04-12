@@ -1,0 +1,28 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  lang: 'en' | 'es'
+  title?: string
+}
+
+const { lang, title = 'Paul Gonzalez — Senior Software Engineer' } = Astro.props
+---
+<!doctype html>
+<html lang={lang} data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Paul Gonzalez — Senior Software Engineer. Ruby on Rails, 7+ years, Remote." />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Prevent theme flash: read localStorage before paint -->
+    <script is:inline>
+      const saved = localStorage.getItem('theme')
+      if (saved) document.documentElement.setAttribute('data-theme', saved)
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
