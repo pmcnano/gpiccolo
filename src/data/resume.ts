@@ -59,7 +59,7 @@ export const content = {
         company: 'ShirtSpace.com',
         role: 'Senior Software Engineer',
         type: '',
-        period: 'Mar 2019 – Sep 2025',
+        period: 'Mar 2019 – Aug 2025',
         location: '',
         bullets: [
           'Progressed from entry-level to senior, contributing to strategic planning and cross-team collaboration',
@@ -153,7 +153,7 @@ export const content = {
         company: 'ShirtSpace.com',
         role: 'Ingeniero de Software Senior',
         type: '',
-        period: 'Mar 2019 – Sep 2025',
+        period: 'Mar 2019 – Aug 2025',
         location: '',
         bullets: [
           'Progresé de nivel inicial a senior, contribuyendo a planificación estratégica y colaboración interdepartamental',
