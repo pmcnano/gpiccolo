@@ -38,6 +38,14 @@ export const content = {
           { label: 'Pro tier', href: 'https://www.vucempdf.com/pro' },
         ],
       },
+      {
+        name: 'Trabajos Yucatán',
+        description: 'Free job board focused on Yucatán, México. Built and shipped with a faceted public listings index, a 3-step post-a-job wizard with live preview for employers, and an admin moderation area. Location data syncs from INEGI on a monthly cron.',
+        stack: ['Ruby 4', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Hotwire', 'ViewComponent', 'Tailwind CSS', 'Devise', 'Dokku'],
+        links: [
+          { label: 'Website', href: 'https://www.trabajosyucatan.com' },
+        ],
+      },
     ],
     experience: [
       {
@@ -130,6 +138,14 @@ export const content = {
         links: [
           { label: 'Versión gratuita', href: 'https://www.vucempdf.com' },
           { label: 'Versión Pro', href: 'https://www.vucempdf.com/pro' },
+        ],
+      },
+      {
+        name: 'Trabajos Yucatán',
+        description: 'Bolsa de trabajo gratuita enfocada en Yucatán, México. Desarrollada y lanzada con un índice público con filtros, un asistente de 3 pasos para publicar vacantes con vista previa en vivo para empleadores, y un área de moderación administrativa. Los datos de ubicación se sincronizan mensualmente desde el INEGI.',
+        stack: ['Ruby 4', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Hotwire', 'ViewComponent', 'Tailwind CSS', 'Devise', 'Dokku'],
+        links: [
+          { label: 'Sitio web', href: 'https://www.trabajosyucatan.com' },
         ],
       },
     ],
