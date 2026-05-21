@@ -60,7 +60,6 @@ export const content = {
           'Drove significant database performance improvements: reduced overall size by 66%, eliminated unused indexes, and resolved N+1 query patterns across API controllers',
           'Drove a platform-wide API performance initiative — profiling and optimizing multiple controllers, with standout results including a 50%+ reduction in P95 response time on the most demanding endpoint',
           'Refactored the SSO integration architecture for Apple, Google, and Facebook — eliminating per-whitelabel subdomain whitelisting requirements and enabling seamless SSO support for any newly onboarded whitelabel',
-          'Actively working to raise engineering standards across the team — advocating for performance awareness, intentional git practices, and meaningful PR and commit hygiene',
         ],
       },
       {
@@ -160,7 +159,6 @@ export const content = {
           'Impulsé mejoras significativas en el rendimiento de la base de datos: reduje el tamaño total en un 66%, eliminé índices no utilizados y resolví patrones de consultas N+1 en los controladores',
           'Impulsé una iniciativa de rendimiento de API a nivel de plataforma — perfilando y optimizando múltiples controladores, con resultados destacados de más de 50% de reducción en el tiempo de respuesta P95 del endpoint más exigente',
           'Refactoricé la arquitectura de integración SSO para Apple, Google y Facebook — eliminando los requisitos de whitelisting de subdominios por whitelabel y habilitando soporte SSO inmediato para cualquier nuevo whitelabel',
-          'Trabajando activamente para elevar los estándares de ingeniería del equipo — promoviendo la conciencia sobre rendimiento, buenas prácticas de git y una cultura de commits y PRs con descripción y propósito claros',
         ],
       },
       {
