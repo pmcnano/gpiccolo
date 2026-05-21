@@ -35,7 +35,7 @@ export const content = {
         stack: ['Ruby', 'Sinatra', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Python', 'Dokku'],
         links: [
           { label: 'Free tier', href: 'https://www.vucempdf.com' },
-          { label: 'Pro tier', href: 'https://pro.vucempdf.com' },
+          { label: 'Pro tier', href: 'https://www.vucempdf.com/pro' },
         ],
       },
     ],
@@ -129,7 +129,7 @@ export const content = {
         stack: ['Ruby', 'Sinatra', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Python', 'Dokku'],
         links: [
           { label: 'Versión gratuita', href: 'https://www.vucempdf.com' },
-          { label: 'Versión Pro', href: 'https://pro.vucempdf.com' },
+          { label: 'Versión Pro', href: 'https://www.vucempdf.com/pro' },
         ],
       },
     ],
