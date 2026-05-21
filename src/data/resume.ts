@@ -65,6 +65,7 @@ export const content = {
       {
         company: 'ShirtSpace.com',
         role: 'Senior Software Engineer',
+        progression: 'Career path: Junior → Mid → Senior',
         type: '',
         period: 'Mar 2019 – Aug 2025',
         location: '',
@@ -165,6 +166,7 @@ export const content = {
       {
         company: 'ShirtSpace.com',
         role: 'Ingeniero de Software Senior',
+        progression: 'Trayectoria: Junior → Semi-Senior → Senior',
         type: '',
         period: 'Mar 2019 – Ago 2025',
         location: '',
