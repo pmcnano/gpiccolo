@@ -94,10 +94,11 @@ export const content = {
       },
     ],
     skills: {
-      'Languages': ['Ruby', 'JavaScript', 'HTML'],
-      'Frameworks & Tools': ['Rails', 'REST API', 'GraphQL', 'Elasticsearch', 'Redis', 'Algorithms'],
-      'Cloud & Infra': ['AWS', 'Heroku', 'Dokku', 'DevOps', 'CI/CD'],
-      'OS': ['Linux', 'macOS', 'Windows'],
+      'Languages': ['Ruby', 'JavaScript', 'TypeScript', 'Python'],
+      'Backend': ['Rails', 'Sinatra', 'Sidekiq', 'ViewComponent', 'Devise', 'REST API', 'GraphQL'],
+      'Frontend': ['Hotwire (Turbo + Stimulus)', 'Tailwind CSS', 'React'],
+      'Data': ['PostgreSQL', 'Redis', 'Elasticsearch'],
+      'Cloud & Infra': ['AWS', 'Cloudflare', 'Heroku', 'Dokku', 'Docker', 'CI/CD'],
     },
     education: [
       {
@@ -193,10 +194,11 @@ export const content = {
       },
     ],
     skills: {
-      'Lenguajes': ['Ruby', 'JavaScript', 'HTML'],
-      'Frameworks y Herramientas': ['Rails', 'REST API', 'GraphQL', 'Elasticsearch', 'Redis', 'Algoritmos'],
-      'Cloud e Infraestructura': ['AWS', 'Heroku', 'Dokku', 'DevOps', 'CI/CD'],
-      'Sistemas Operativos': ['Linux', 'macOS', 'Windows'],
+      'Lenguajes': ['Ruby', 'JavaScript', 'TypeScript', 'Python'],
+      'Backend': ['Rails', 'Sinatra', 'Sidekiq', 'ViewComponent', 'Devise', 'REST API', 'GraphQL'],
+      'Frontend': ['Hotwire (Turbo + Stimulus)', 'Tailwind CSS', 'React'],
+      'Datos': ['PostgreSQL', 'Redis', 'Elasticsearch'],
+      'Cloud e Infraestructura': ['AWS', 'Cloudflare', 'Heroku', 'Dokku', 'Docker', 'CI/CD'],
     },
     education: [
       {
