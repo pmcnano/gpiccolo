@@ -23,6 +23,9 @@ const t = content[lang]
               {job.progression && (
                 <p class="job-progression muted">{job.progression}</p>
               )}
+              {job.scope && (
+                <p class="job-scope muted">{job.scope}</p>
+              )}
             </div>
             <div class="job-meta">
               <span class="mono muted">{job.period}</span>
@@ -34,8 +37,8 @@ const t = content[lang]
               {job.bullets.map((b) => <li>{b}</li>)}
             </ul>
           )}
-          {job.bullets.length === 0 && (
-            <p class="job-pending muted">Details coming soon.</p>
+          {job.bullets.length === 0 && !job.scope && (
+            <p class="job-pending muted">{t.jobPending}</p>
           )}
         </div>
       ))}
@@ -56,7 +59,7 @@ const t = content[lang]
   .job-company { font-size: 1.05rem; font-weight: 600; }
   .job-role { font-size: 0.875rem; color: var(--accent); margin-top: 0.15rem; }
   .job-type { color: var(--text-muted); }
-  .job-progression { font-size: 0.8rem; margin-top: 0.25rem; font-style: italic; }
+  .job-progression, .job-scope { font-size: 0.8rem; margin-top: 0.25rem; font-style: italic; }
   .job-meta { text-align: right; font-size: 0.8rem; display: flex; flex-direction: column; gap: 0.15rem; }
   .job-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; padding-left: 0; }
   .job-bullets li { font-size: 0.9rem; color: var(--text-muted); padding-left: 1.25rem; position: relative; }
