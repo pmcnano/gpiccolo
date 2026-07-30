@@ -52,6 +52,7 @@ export const content = {
       {
         company: 'Goldbelly',
         role: 'Staff Software Engineer',
+        scope: 'Scope: platform performance, database health, and code quality standards',
         type: '',
         period: 'Aug 2026 – Present',
         location: 'Remote',
@@ -162,6 +163,7 @@ export const content = {
       {
         company: 'Goldbelly',
         role: 'Ingeniero de Software Staff',
+        scope: 'Alcance: rendimiento de la plataforma, salud de la base de datos y estándares de calidad de código',
         type: '',
         period: 'Ago 2026 – Presente',
         location: 'Remoto',
