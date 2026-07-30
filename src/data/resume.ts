@@ -17,7 +17,7 @@ export const content = {
     nav: { name: 'Paul Gonzalez' },
     hero: {
       name: 'Paul Gonzalez',
-      title: 'Senior Software Engineer',
+      title: 'Staff Software Engineer',
       summary: (years: number) => `Ruby on Rails engineer with ${years}+ years of experience building scalable systems, integrations, and automation. Known for a sharp eye on performance and a strong attention to detail. Currently at Goldbelly.`,
       location: 'Mexico · Remote',
     },
@@ -28,6 +28,7 @@ export const content = {
       education: 'Education',
       contact: 'Contact',
     },
+    jobPending: 'Details coming soon.',
     projects: [
       {
         name: 'VUCEM PDF',
@@ -50,9 +51,17 @@ export const content = {
     experience: [
       {
         company: 'Goldbelly',
+        role: 'Staff Software Engineer',
+        type: '',
+        period: 'Aug 2026 – Present',
+        location: 'Remote',
+        bullets: [],
+      },
+      {
+        company: 'Goldbelly',
         role: 'Senior Software Engineer',
         type: '',
-        period: 'Aug 2025 – Present',
+        period: 'Aug 2025 – Jul 2026',
         location: 'Remote',
         bullets: [
           'Designed and delivered Multi Recipient Checkout — a feature allowing customers to purchase and ship a single order to multiple recipients',
@@ -110,7 +119,7 @@ export const content = {
     ],
     contact: {
       heading: "Let's work together",
-      subheading: 'Open to senior engineering roles and consulting opportunities.',
+      subheading: 'Open to staff and senior engineering roles and consulting opportunities.',
     },
     langToggle: 'ES',
   },
@@ -118,7 +127,7 @@ export const content = {
     nav: { name: 'Paul Gonzalez' },
     hero: {
       name: 'Paul Gonzalez',
-      title: 'Ingeniero de Software Senior',
+      title: 'Ingeniero de Software Staff',
       summary: (years: number) => `Ingeniero Ruby on Rails con más de ${years} años de experiencia construyendo sistemas escalables, integraciones y automatización. Reconocido por su atención al rendimiento y su gran atención al detalle. Actualmente en Goldbelly.`,
       location: 'México · Remoto',
     },
@@ -129,6 +138,7 @@ export const content = {
       education: 'Educación',
       contact: 'Contacto',
     },
+    jobPending: 'Detalles próximamente.',
     projects: [
       {
         name: 'VUCEM PDF',
@@ -151,9 +161,17 @@ export const content = {
     experience: [
       {
         company: 'Goldbelly',
+        role: 'Ingeniero de Software Staff',
+        type: '',
+        period: 'Ago 2026 – Presente',
+        location: 'Remoto',
+        bullets: [],
+      },
+      {
+        company: 'Goldbelly',
         role: 'Ingeniero de Software Senior',
         type: '',
-        period: 'Ago 2025 – Presente',
+        period: 'Ago 2025 – Jul 2026',
         location: 'Remoto',
         bullets: [
           'Diseñé y desarrollé el checkout Multi Destinatario — funcionalidad que permite a los clientes comprar y enviar un pedido a múltiples destinatarios',
@@ -211,7 +229,7 @@ export const content = {
     ],
     contact: {
       heading: 'Trabajemos juntos',
-      subheading: 'Abierto a roles senior de ingeniería y oportunidades de consultoría.',
+      subheading: 'Abierto a roles staff y senior de ingeniería y oportunidades de consultoría.',
     },
     langToggle: 'EN',
   },
