@@ -88,6 +88,7 @@ export const content = {
         period: 'Mar 2023 – Present',
         location: '',
         bullets: [
+          'Built and launched a custom Rails storefront to replace Shopify — catalog, cart, card and SPEI checkout via Clip, a customer code vault, rule-based fraud scoring, and a Google Merchant Center feed — and migrated customers, orders, and old store links at cutover',
           'Pitched and led the marketplace diversification strategy — grew sales channels from 2 (Amazon, MercadoLibre) to 8, opening new revenue streams',
           'Designed and built the backend powering inventory and order management end-to-end — 30% YOY growth, 90% process automation',
           'Engineered e-commerce integrations across Amazon, MercadoLibre, WooCommerce, Shopify, Eneba, Kinguin, G2A, and Driffle',
@@ -208,6 +209,7 @@ export const content = {
         period: 'Mar 2023 – Presente',
         location: '',
         bullets: [
+          'Construí y lancé una tienda en línea propia en Rails para reemplazar Shopify — catálogo, carrito, checkout con tarjeta y SPEI vía Clip, bóveda de códigos para clientes, detección de fraude basada en reglas y feed para Google Merchant Center — y migré clientes, órdenes y enlaces de la tienda anterior en el cambio',
           'Propuse y lideré la estrategia de diversificación en marketplaces — crecimos los canales de venta de 2 (Amazon, MercadoLibre) a 8, abriendo nuevas fuentes de ingreso',
           'Diseñé y construí de extremo a extremo el backend que gestiona inventario y órdenes — 30% de crecimiento anual, 90% de automatización',
           'Desarrollé integraciones de e-commerce con Amazon, MercadoLibre, WooCommerce, Shopify, Eneba, Kinguin, G2A y Driffle',
