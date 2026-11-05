@@ -31,6 +31,15 @@ export const content = {
     jobPending: 'Details coming soon.',
     projects: [
       {
+        name: 'skf2dxf',
+        description: 'Open-source converter from AutoSketch drawings (.skf) to DXF, so they open in AutoCAD without AutoSketch. Reverse-engineered the undocumented file format from sample files and validated the output against AutoSketch\'s own DWG export. Runs as a CLI or entirely in the browser via Pyodide — files never leave the computer — with drawing preview, PDF export, and offline support.',
+        stack: ['Python', 'Pyodide', 'JavaScript', 'Cloudflare Workers', 'Workers KV', 'Analytics Engine'],
+        links: [
+          { label: 'Website', href: 'https://skf2dxf.com' },
+          { label: 'Source', href: 'https://github.com/pmcnano/skf2dxf' },
+        ],
+      },
+      {
         name: 'VUCEM PDF',
         description: 'PDF and image converter to 300 DPI for SAT (Mexican tax authority) compliance. Built and shipped as a free tier and a paid Pro tier with user accounts, higher limits, and background processing.',
         stack: ['Ruby', 'Sinatra', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Python', 'Dokku'],
@@ -79,6 +88,7 @@ export const content = {
         period: 'Mar 2023 – Present',
         location: '',
         bullets: [
+          'Built and launched a custom Rails storefront to replace Shopify — catalog, cart, card and SPEI checkout via Clip, a customer code vault, rule-based fraud scoring, and a Google Merchant Center feed — and migrated customers, orders, and old store links at cutover',
           'Pitched and led the marketplace diversification strategy — grew sales channels from 2 (Amazon, MercadoLibre) to 8, opening new revenue streams',
           'Designed and built the backend powering inventory and order management end-to-end — 30% YOY growth, 90% process automation',
           'Engineered e-commerce integrations across Amazon, MercadoLibre, WooCommerce, Shopify, Eneba, Kinguin, G2A, and Driffle',
@@ -142,6 +152,15 @@ export const content = {
     jobPending: 'Detalles próximamente.',
     projects: [
       {
+        name: 'skf2dxf',
+        description: 'Convertidor open source de dibujos de AutoSketch (.skf) a DXF, para abrirlos en AutoCAD sin AutoSketch. Hice ingeniería inversa del formato, que no está documentado, a partir de archivos de muestra y validé el resultado contra la exportación DWG del propio AutoSketch. Funciona como CLI o completamente en el navegador con Pyodide — los archivos nunca salen de la computadora — con vista previa, exportación a PDF y uso sin conexión.',
+        stack: ['Python', 'Pyodide', 'JavaScript', 'Cloudflare Workers', 'Workers KV', 'Analytics Engine'],
+        links: [
+          { label: 'Sitio web', href: 'https://skf2dxf.com' },
+          { label: 'Código fuente', href: 'https://github.com/pmcnano/skf2dxf' },
+        ],
+      },
+      {
         name: 'VUCEM PDF',
         description: 'Convertidor de PDFs e imágenes a 300 DPI para cumplimiento con el SAT. Desarrollado y lanzado en dos niveles: una versión gratuita y una Pro de pago con cuentas de usuario, límites superiores y procesamiento en segundo plano.',
         stack: ['Ruby', 'Sinatra', 'Rails 8.1', 'PostgreSQL', 'Sidekiq', 'Redis', 'Python', 'Dokku'],
@@ -190,6 +209,7 @@ export const content = {
         period: 'Mar 2023 – Presente',
         location: '',
         bullets: [
+          'Construí y lancé una tienda en línea propia en Rails para reemplazar Shopify — catálogo, carrito, checkout con tarjeta y SPEI vía Clip, bóveda de códigos para clientes, detección de fraude basada en reglas y feed para Google Merchant Center — y migré clientes, órdenes y enlaces de la tienda anterior en el cambio',
           'Propuse y lideré la estrategia de diversificación en marketplaces — crecimos los canales de venta de 2 (Amazon, MercadoLibre) a 8, abriendo nuevas fuentes de ingreso',
           'Diseñé y construí de extremo a extremo el backend que gestiona inventario y órdenes — 30% de crecimiento anual, 90% de automatización',
           'Desarrollé integraciones de e-commerce con Amazon, MercadoLibre, WooCommerce, Shopify, Eneba, Kinguin, G2A y Driffle',
